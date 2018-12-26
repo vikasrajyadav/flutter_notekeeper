@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:notekeeper/screens/note_detail.dart';
 
 class NoteList extends StatefulWidget {
   @override
@@ -21,6 +22,10 @@ class NoteListState extends State<NoteList> {
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           debugPrint('float icon pressed');
+          // Navigator.push(context, MaterialPageRoute(builder: (context) {
+          //   return NoteDetail();
+          // }));
+          NavigateTotdetail("Add Note");
         },
         tooltip: 'Add note',
         child: Icon(Icons.add),
@@ -53,10 +58,17 @@ class NoteListState extends State<NoteList> {
             ),
             onTap: () {
               debugPrint('button tap');
+              NavigateTotdetail("Edit Note");
             },
           ),
         );
       },
     );
+  }
+
+  void NavigateTotdetail(String title) {
+    Navigator.push(context, MaterialPageRoute(builder: (context) {
+      return NoteDetail(title);
+    }));
   }
 }
