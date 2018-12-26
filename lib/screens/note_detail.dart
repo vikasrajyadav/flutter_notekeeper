@@ -42,6 +42,7 @@ class NoteDetailState extends State<NoteDetail> {
 		titleController.text = note.title;
 		descriptionController.text = note.description;
 
+    
     return WillPopScope(
 
 	    onWillPop: () {
