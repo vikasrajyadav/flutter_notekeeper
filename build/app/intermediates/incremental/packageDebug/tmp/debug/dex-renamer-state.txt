@@ -1,0 +1,4 @@
+#Thu Dec 27 19:26:08 IST 2018
+base.0=D\:\\git\\flutter\\notekeeper\\build\\app\\intermediates\\transforms\\dexMerger\\debug\\0
+path.0=classes.dex
+renamed.0=classes.dex
